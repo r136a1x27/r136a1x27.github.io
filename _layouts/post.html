@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: default_post
 refactor: true
 panel_includes:
   - toc
 tail_includes:
-  - related-posts
-  - post-nav
 script_includes:
   - comment
 ---
@@ -55,6 +53,7 @@ script_includes:
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
+        {% comment %}
         <span>
           {% if page.author %}
             {% assign authors = page.author %}
@@ -79,6 +78,7 @@ script_includes:
             {% endif %}
           </em>
         </span>
+        {% endcomment %}
 
         <div>
           <!-- pageviews -->
@@ -92,7 +92,9 @@ script_includes:
           {% endif %}
 
           <!-- read time -->
-          {% include read-time.html content=content prompt=true lang=lang %}
+          {% comment %}
+            {% include read-time.html content=content prompt=true lang=lang %}
+          {% endcomment %}
         </div>
       </div>
     </div>
