@@ -23,5 +23,8 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
+<<<<<<< HEAD
 _sass/vendors
 # assets/js/dist
+=======
+>>>>>>> 52ab96a (chore: initialize the environment)
