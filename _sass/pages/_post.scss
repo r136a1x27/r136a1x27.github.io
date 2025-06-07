@@ -494,6 +494,7 @@ h1 {
 h2,
 h3,
 h4 {
+  font-family: "Pretendard Semibold";
   @include bp.xl {
     scroll-margin-top: 2rem;
   }
